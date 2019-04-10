@@ -1,0 +1,14 @@
+
+
+
+.poem {
+	max-width: 80vw;
+	margin: 0 0 0 10rem;
+	transition: opacity .3s;
+
+}
+
+.poem__hidden {
+	opacity: 0;
+	transition: opacity .3s;
+}

@@ -4,12 +4,100 @@
 	<title>Eliza Poets</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="styles/poem.css">
+
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,500,500i,700,700i" rel="stylesheet">
 </head>
 <body>
 
-	<img class="headshot" src="img/headshot.png">
-	<h1>ElizaBeth is more<br>punk rock than Brice.</h1>
+	<nav>
+		<div class="nav__container nav__home-box">
+			<span id="home" class="nav__temp-home">HOME</span>
+		</div><!-- HOME BOX -->
+		<div class="nav__container">
+			<div class="nav__link nav__poems-box">
+				<img id="poems-icon" class="nav__link-image" src="img/poems.png" alt="poems dropdown menu">
+				<span id="poems-caption" class="nav__link-caption nav__caption-hidden">poems</span>
+			</div>
+			<div class="nav__link nav__experience-box">
+				<img id="experience-icon" class="nav__link-image" src="img/experience.png" alt="experience dropdown menu">
+				<span id="experience-caption" class="nav__link-caption nav__caption-hidden">experience</span>
+			</div>
+			<div class="nav__link nav__contact-box">
+				<img id="contact-icon" class="nav__link-image" src="img/contact.png" alt="contact dropdown menu">
+				<span id="contact-caption" class="nav__link-caption nav__caption-hidden">contact</span>
+			</div>
+			<div class="nav__hrz-spc"></div>
+		</div><!-- NAV LINKS BOX -->
+	</nav>
+
+	<img id="headshot" class="headshot" src="img/headshot.png">
+	<h1 id="bold-claim" class="bold-claim" >ElizaBeth is more<br>punk rock than Brice.</h1>
+
+	<img id="idolatry" class="poem poem__hidden" src="img/idolatry.png" alt="play audio track for poem">
+
+
+	<script type="text/javascript">
+
+	// MAIN CONTENT VARIABLES
+		var boldClaim = document.getElementById("bold-claim");
+		var headshot = document.getElementById("headshot");
+
+	// POEMS
+		var idolatry = document.getElementById("idolatry");
+
+	// NAV
+		var home = document.getElementById("home");
+
+		home.addEventListener("click", function() {
+			boldClaim.classList.remove("move-aside");
+			idolatry.classList.add("poem__hidden");
+			headshot.classList.remove("headshot-hiddenish");
+		});
+
+
+		var poemsIcon = document.getElementById("poems-icon");
+		var poemsCaption = document.getElementById("poems-caption");
+
+		poemsIcon.addEventListener("mouseenter", function() {
+			poemsCaption.classList.remove("nav__caption-hidden");
+		});
+		poemsIcon.addEventListener("mouseleave", function() {
+			poemsCaption.classList.add("nav__caption-hidden");
+		});
+		poemsIcon.addEventListener("click", function() {
+			boldClaim.classList.add("move-aside");
+			idolatry.classList.remove("poem__hidden");
+			headshot.classList.add("headshot-hiddenish");
+		});
+
+
+		var experienceIcon = document.getElementById("experience-icon");
+		var experienceCaption = document.getElementById("experience-caption");
+
+		experienceIcon.addEventListener("mouseenter", function() {
+			experienceCaption.classList.remove("nav__caption-hidden");
+		});
+		experienceIcon.addEventListener("mouseleave", function() {
+			experienceCaption.classList.add("nav__caption-hidden");
+		});
+
+
+		var contactIcon = document.getElementById("contact-icon");
+		var contactCaption = document.getElementById("contact-caption");
+
+		contactIcon.addEventListener("mouseenter", function() {
+			contactCaption.classList.remove("nav__caption-hidden");
+		});
+		contactIcon.addEventListener("mouseleave", function() {
+			contactCaption.classList.add("nav__caption-hidden");
+		});
+
+
+
+	</script>
 
 </body>
 </html>

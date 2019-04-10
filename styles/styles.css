@@ -1,0 +1,44 @@
+
+
+
+* {
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+	background-color: lightblue;
+}
+
+.bold-claim {
+	position: absolute;
+	top: 12rem;
+	left: 10vw;
+	font-family: 'IBM Plex Mono', monospace;
+	text-align: center;
+	font-size: 6rem;
+	z-index: 1;
+	transition: all .6s;
+	letter-spacing: -.5rem;
+}
+
+.move-aside {
+	transform: rotate(90deg);
+	top: 32rem;
+	left: -30rem;
+	transition: all .6s;
+}
+
+
+.headshot {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	opacity: .8;
+	transition: opacity .3s;
+	z-index: 2;
+}
+
+.headshot-hiddenish {
+	opacity: .0125;
+	transition: opacity .3s;
+}
