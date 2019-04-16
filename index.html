@@ -20,6 +20,20 @@
 			<div class="nav__link nav__poems-box">
 				<img id="poems-icon" class="nav__link-image" src="img/poems.png" alt="poems dropdown menu">
 				<span id="poems-caption" class="nav__link-caption nav__caption-hidden">poems</span>
+
+				<div class="poems__dropdown-box">
+					<ul id="poems-list" class="poems__dropdown-list poems__hidden">
+						<li id="ancestors-link" class="poems__link">ancestors</li>
+						<li id="bouyancy-link" class="poems__link">bouyancy</li>
+						<li id="braces-link" class="poems__link">braces</li>
+						<li id="common-sense-link" class="poems__link">common-sense</li>
+						<li id="idolatry-link" class="poems__link">idolatry</li>
+						<li id="immensely-link" class="poems__link">immensely</li>
+						<li id="july4th-link" class="poems__link">July 4th</li>
+						<li id="reliogious-experience-link" class="poems__link">religious experience</li>
+					</ul>
+				</div><!-- POEMS DROPDOWN -->
+
 			</div>
 			<div class="nav__link nav__experience-box">
 				<img id="experience-icon" class="nav__link-image" src="img/experience.png" alt="experience dropdown menu">
@@ -46,10 +60,27 @@
 		var headshot = document.getElementById("headshot");
 
 	// POEMS
+		var ancestorsLink = document.getElementById("ancestors-link");
+		var bouyancyLink = document.getElementById("bouyancy-link");
+		var bracesLink = document.getElementById("braces-link");
+		var commonSenseLink = document.getElementById("common-sense-link");
+		var idolatryLink = document.getElementById("idolatry-link");
+		var immenselyLink = document.getElementById("immensely-link");
+		var july4thLink = document.getElementById("july4th-link");
+		var religiousExperienceLink = document.getElementById("reliogious-experience-link");
+
+		var ancestors = document.getElementById("ancestors");
+		var bouyancy = document.getElementById("bouyancy");
+		var braces = document.getElementById("braces");
+		var commonSense = document.getElementById("common-sense");
 		var idolatry = document.getElementById("idolatry");
+		var immensely = document.getElementById("immensely");
+		var july4th = document.getElementById("july4th");
+		var religiousExperience = document.getElementById("religiousExperience");
 
 	// NAV
 		var home = document.getElementById("home");
+		var poemsList = document.getElementById("poems-list");
 
 		home.addEventListener("click", function() {
 			boldClaim.classList.remove("move-aside");
@@ -69,7 +100,7 @@
 		});
 		poemsIcon.addEventListener("click", function() {
 			boldClaim.classList.add("move-aside");
-			idolatry.classList.remove("poem__hidden");
+			poemsList.classList.toggle("poems__hidden");
 			headshot.classList.add("headshot-hiddenish");
 		});
 
@@ -95,9 +126,15 @@
 			contactCaption.classList.add("nav__caption-hidden");
 		});
 
+	// POEM SELECTION
 
 
 	</script>
 
 </body>
 </html>
+
+
+
+
+

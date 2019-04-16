@@ -40,6 +40,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 10;
 	/*margin: 0px 20px 0 20px;*/
 }
 
@@ -69,7 +70,7 @@ nav {
 }
 
 .nav__caption-hidden {
-	margin-top: -300px;
+	margin-top: -600px;
 	transition: margin-top .6s;
 }
 

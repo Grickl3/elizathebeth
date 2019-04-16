@@ -12,3 +12,27 @@
 	opacity: 0;
 	transition: opacity .3s;
 }
+
+.poems__dropdown-box {
+	position: absolute;
+	top: 175px;
+}
+
+.poems__dropdown-list {
+	list-style: none;
+}
+
+.poems__link {
+	margin: 12px 0 0 0;
+	padding: 0 0 0 3rem;
+	cursor: zoom-in;
+}
+
+.poems__link:hover {
+	color: white;
+	background-color: #02142c;
+}
+
+.poems__hidden {   /* used for links list, not full poems */
+	display: none;
+}
