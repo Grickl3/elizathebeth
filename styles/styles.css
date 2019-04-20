@@ -42,3 +42,33 @@ body {
 	opacity: .0125;
 	transition: opacity .3s;
 }
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+.styles__mark-circle {
+	position: absolute;	
+	bottom: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 50vw;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 50px;
+	z-index: 15;
+	border-radius: 25px;
+}
+
+.styles__mark-circle:hover {
+	background-color: white;
+}
+
+.styles__sqglz-logo {
+	transform: translateY(20%);
+	height: 32px;
+	z-index: 16;
+}

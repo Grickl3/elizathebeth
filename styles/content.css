@@ -1,0 +1,18 @@
+
+
+
+.content-box {
+	margin-top: 8rem;
+
+}
+
+.content-storage {
+	display: none;
+}
+
+.content__experience {
+	margin-top: 12rem;
+	margin-left: 50vw;
+	transform: translateX(-50%);
+	max-width: 750px;
+}
