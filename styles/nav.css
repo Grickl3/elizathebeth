@@ -45,8 +45,8 @@ nav {
 }
 
 .nav__poems-box {margin: 0px 10px 0 20px;}
-.nav__experience-box {margin: 10px 0px 0 20px;}
-.nav__contact-box {margin: 55px 5px 0 5px;}
+.nav__experience-box {margin: 35px 0px 0 10px;}
+.nav__contact-box {margin: 120px 5px 0 5px;}
 
 .nav__link-image {
 	height: 125px;

@@ -15,4 +15,17 @@
 	margin-left: 50vw;
 	transform: translateX(-50%);
 	max-width: 750px;
+
+	line-height: 1.8rem;
+}
+
+.content__contact {
+	margin-top: 18rem;
+	margin-left: 50vw;
+	padding: 2rem;
+	transform: translateX(-50%);
+	max-width: 750px;
+
+	line-height: 1.8rem;
+	border: 1px solid navy;
 }

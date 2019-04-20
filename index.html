@@ -56,22 +56,26 @@
 	</div><!-- CONTENT BOX -->
 
 	<div class="content-storage">
-		<img id="ancestors" class="poem" src="img/ancestors.png" alt="play audio track for poem">
-		<img id="bouyancy" class="poem" src="img/bouyancy.png" alt="play audio track for poem">
-		<img id="braces" class="poem" src="img/braces.png" alt="play audio track for poem">
-		<img id="common-sense" class="poem" src="img/common-sense.png" alt="play audio track for poem">
-		<img id="idolatry" class="poem" src="img/idolatry.png" alt="play audio track for poem">
-		<img id="immensely" class="poem" src="img/immensely.png" alt="play audio track for poem">
-		<img id="july4th" class="poem" src="img/july-4th.png" alt="play audio track for poem">
-		<img id="religious-experience" class="poem" src="img/religious-experience.png" alt="play audio track for poem">
+		<img id="ancestors" class="poem poem__hidden" src="img/ancestors.png" alt="play audio track for poem">
+		<img id="bouyancy" class="poem poem__hidden" src="img/bouyancy.png" alt="play audio track for poem">
+		<img id="braces" class="poem poem__hidden" src="img/braces.png" alt="play audio track for poem">
+		<img id="common-sense" class="poem poem__hidden" src="img/common-sense.png" alt="play audio track for poem">
+		<img id="idolatry" class="poem poem__hidden" src="img/idolatry.png" alt="play audio track for poem">
+		<img id="immensely" class="poem poem__hidden" src="img/immensely.png" alt="play audio track for poem">
+		<img id="july-4th" class="poem poem__hidden" src="img/july-4th.png" alt="play audio track for poem">
+		<img id="religious-experience" class="poem poem__hidden" src="img/religious-experience.png" alt="play audio track for poem">
 
 		<div id="experience-content" class="content__experience">
 			<h2>Experience</h2>
 			<h6>Improv poetry is my jam.</h6>   
 
 			<p>Whether on the stage with a rock band, jumping into a cipher in an alley, or sitting in an elegant dining environment writing on-demand poetry on my trusty typewriter for a special event.  I have experience writing on-demand poems for couples, friends, individuals, non-profits and companies.  Message me to book the creative personalized gift of poetry to your next event.</p>
-
 		</div><!-- EXPERIENCE CONTENT -->
+
+		<div id="contact-content" class="content__contact">
+			<h1>Here we have some contact information</h1>
+			<h5>— or maybe a contact form?</h5>
+		</div><!-- CONTACT CONTENT -->
 	</div><!-- CONTENT STORAGE -->
 
 	<footer>
@@ -90,6 +94,7 @@
 		var headshot = document.getElementById("headshot");
 		var contentBox = document.getElementById("content-box");
 		var experienceContent = document.getElementById("experience-content");
+		var contactContent = document.getElementById("contact-content");
 
 	// NAV
 		var home = document.getElementById("home");
@@ -146,6 +151,13 @@
 		contactIcon.addEventListener("mouseleave", function() {
 			contactCaption.classList.add("nav__caption-hidden");
 		});
+		contactIcon.addEventListener("click", function() {
+			boldClaim.classList.add("move-aside");
+			poemsList.classList.add("poems__hidden");
+			headshot.classList.add("headshot-hiddenish");
+			contentBox.innerHTML = '';
+			contentBox.appendChild(contactContent);
+		});
 
 	// POEMS
 		var ancestorsLink = document.getElementById("ancestors-link");
@@ -173,9 +185,58 @@
 		ancestorsLink.addEventListener("click", function() {
 			contentBox.innerHTML = '';
 			contentBox.appendChild(ancestors);
+			ancestors.classList.remove("poem__hidden");
 			poemsList.classList.add("poems__hidden");
 		});
 
+		bouyancyLink.addEventListener("click", function() {
+			contentBox.innerHTML = '';
+			contentBox.appendChild(bouyancy);
+			bouyancy.classList.remove("poem__hidden");
+			poemsList.classList.add("poems__hidden");
+		});
+
+		bracesLink.addEventListener("click", function() {
+			contentBox.innerHTML = '';
+			contentBox.appendChild(braces);
+			braces.classList.remove("poem__hidden");
+			poemsList.classList.add("poems__hidden");
+		});
+
+		commonSenseLink.addEventListener("click", function() {
+			contentBox.innerHTML = '';
+			contentBox.appendChild(commonSense);
+			commonSense.classList.remove("poem__hidden");
+			poemsList.classList.add("poems__hidden");
+		});
+
+		idolatryLink.addEventListener("click", function() {
+			contentBox.innerHTML = '';
+			contentBox.appendChild(idolatry);
+			idolatry.classList.remove("poem__hidden");
+			poemsList.classList.add("poems__hidden");
+		});
+
+		immenselyLink.addEventListener("click", function() {
+			contentBox.innerHTML = '';
+			contentBox.appendChild(immensely);
+			immensely.classList.remove("poem__hidden");
+			poemsList.classList.add("poems__hidden");
+		});
+
+		july4thLink.addEventListener("click", function() {
+			contentBox.innerHTML = '';
+			contentBox.appendChild(july4th);
+			july4th.classList.remove("poem__hidden");
+			poemsList.classList.add("poems__hidden");
+		});
+
+		religiousExperienceLink.addEventListener("click", function() {
+			contentBox.innerHTML = '';
+			contentBox.appendChild(religiousExperience);
+			religiousExperience.classList.remove("poem__hidden");
+			poemsList.classList.add("poems__hidden");
+		});
 
 	</script>
 
