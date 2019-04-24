@@ -13,11 +13,11 @@
 </head>
 <body>
 
-	<nav class="nav__mobile">
+	<nav id="mobile-nav" class="nav__mobile">
 		<div id="hamburger" class="nav__hamburger">
-			<img class="nav__hamburger__arm nav__hamburger-top" src="img/mobile-nav-top.png" alt="mobile menu" nopin="nopin">
-			<img class="nav__hamburger__arm nav__hamburger-middle" src="img/mobile-nav-middle.png" alt="mobile menu" nopin="nopin">
-			<img class="nav__hamburger__arm nav__hamburger-bottom" src="img/mobile-nav-bottom.png" alt="mobile menu" nopin="nopin">
+			<img id="top-arm" class="nav__hamburger__arm nav__hamburger-top" src="img/mobile-nav-top.png" alt="mobile menu" nopin="nopin">
+			<img id="middle-arm" class="nav__hamburger__arm nav__hamburger-middle" src="img/mobile-nav-middle.png" alt="mobile menu" nopin="nopin">
+			<img id="bottom-arm" class="nav__hamburger__arm nav__hamburger-bottom" src="img/mobile-nav-bottom.png" alt="mobile menu" nopin="nopin">
 		</div><!-- HAMBURGER -->
 	</nav><!-- MOBILE -->
 
@@ -104,7 +104,21 @@
 		var experienceContent = document.getElementById("experience-content");
 		var contactContent = document.getElementById("contact-content");
 
-	// NAV
+	// NAV HAMBURGER
+		var hamburger = document.getElementById("hamburger");
+		var mobileNav = document.getElementById("mobile-nav");
+		var topArm = document.getElementById("top-arm");
+		var middleArm = document.getElementById("middle-arm");
+		var bottomArm = document.getElementById("bottom-arm");
+
+		hamburger.addEventListener("click", function() {
+			topArm.classList.toggle("nav__hamburger-top-x");
+			middleArm.classList.toggle("nav__hamburger-middle-x");
+			bottomArm.classList.toggle("nav__hamburger-bottom-x");
+			mobileNav.classList.toggle("nav__mobile__open");
+		});
+
+	// NAV => ACTUAL NAVIGATION
 		var home = document.getElementById("home");
 		var poemsList = document.getElementById("poems-list");
 
