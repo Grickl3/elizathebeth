@@ -19,6 +19,10 @@
 	line-height: 1.8rem;
 }
 
+.content__experience__list {
+	list-style: none;
+}
+
 .content__contact {
 	margin-top: 18rem;
 	margin-left: 50vw;
