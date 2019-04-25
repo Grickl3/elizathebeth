@@ -14,13 +14,23 @@ nav {}
 	height: 100px;
 	width: 100vw;
 	opacity: .85;
-	background-color: #97a3bc;
-	border-bottom: 5px solid #0f806d;
+	/*background-color: #97a3bc;*/
+	/*border-bottom: 5px solid #0f806d;*/
+}
+
+
+.nav__background-img {
+	position: absolute;
+	transition: transform .5s;
+	transform: translateY(-75%);
+	z-index: 0;
 }
 
 .nav__mobile__open {
-	height: 600px;
+	transition: all .5s;
+	transform: translateY(-20%);
 }
+
 
 /* =========================== BEGIN HAMBURGER ======== */
 	.nav__hamburger {
@@ -66,8 +76,47 @@ nav {}
 		margin-top: 16px;
 		transform: rotate(-225deg);
 	}
+/* =========================== MOBILE ICON STUFF ======== */
+
+	.nav__links-box__mobile {
+		position: relative;
+		transition: transform .5s;
+		transform: translateY(-50vh);
+		top: 8rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		z-index: 2;
+
+		width: 100vw;
+
+		/*border: 3px solid pink;*/
+	}
+
+	.nav__links-box__descended {
+		transition: all .5s;
+		transform: translateY(0vh);
+	}
 
 
+	.nav__link__mobile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		z-index: 4;
+	}
+
+	.nav__link-image__mobile {
+		position: relative;
+		z-index: 3;
+		height: 125px;
+		opacity: .7;
+		transition: opacity .3s;
+		cursor: pointer;
+	}
+
+/* =========================== DESKTOP NAV ======== */
 .nav__desktop {
 	position: fixed;
 	top: 0;

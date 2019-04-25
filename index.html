@@ -14,11 +14,22 @@
 <body>
 
 	<nav id="mobile-nav" class="nav__mobile">
+		<img id="mobile-nav-background" class="nav__background-img" src="img/mobile-nav-background.png" alt="torn-indigo-linen">
+
 		<div id="hamburger" class="nav__hamburger">
 			<img id="top-arm" class="nav__hamburger__arm nav__hamburger-top" src="img/mobile-nav-top.png" alt="mobile menu" nopin="nopin">
 			<img id="middle-arm" class="nav__hamburger__arm nav__hamburger-middle" src="img/mobile-nav-middle.png" alt="mobile menu" nopin="nopin">
 			<img id="bottom-arm" class="nav__hamburger__arm nav__hamburger-bottom" src="img/mobile-nav-bottom.png" alt="mobile menu" nopin="nopin">
 		</div><!-- HAMBURGER -->
+
+		<div id="mobile-nav-links" class="nav__links-box__mobile">
+			<div class="nav__link__mobile nav__experience-box-mobile">
+				<img id="experience-icon-mobile" class="nav__link-image__mobile" src="img/experience.png" alt="experience" nopin="nopin">
+				<span id="experience-caption-mobile" class="nav__link-caption">experience</span>
+			</div><!-- EXPERIENCE LINK BOX -->
+		</div><!-- LINK BOX -->
+
+
 	</nav><!-- MOBILE -->
 
 	<nav class="nav__desktop">
@@ -107,6 +118,8 @@
 	// NAV HAMBURGER
 		var hamburger = document.getElementById("hamburger");
 		var mobileNav = document.getElementById("mobile-nav");
+		var mobileNavBackground = document.getElementById("mobile-nav-background");
+		var mobileNavLinks = document.getElementById("mobile-nav-links");
 		var topArm = document.getElementById("top-arm");
 		var middleArm = document.getElementById("middle-arm");
 		var bottomArm = document.getElementById("bottom-arm");
@@ -115,7 +128,8 @@
 			topArm.classList.toggle("nav__hamburger-top-x");
 			middleArm.classList.toggle("nav__hamburger-middle-x");
 			bottomArm.classList.toggle("nav__hamburger-bottom-x");
-			mobileNav.classList.toggle("nav__mobile__open");
+			mobileNavBackground.classList.toggle("nav__mobile__open");
+			mobileNavLinks.classList.toggle("nav__links-box__descended");
 		});
 
 	// NAV => ACTUAL NAVIGATION
