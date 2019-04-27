@@ -9,14 +9,29 @@ body {
 	background-color: lightblue;
 }
 
+h1,h2,h3,h4,h5,h6 { color: #092869; }
+
 h2 {
 	font-size: 2.6rem;
 }
 
 h6 {
+	color: #250A6C;
 	font-size: 1.6rem;
 	font-weight: 100;
 	margin-top: -1rem;
+}
+
+p,li {
+	color: #160348;
+}
+
+a {
+	cursor: pointer;
+}
+
+a:hover {
+
 }
 
 .bold-claim {
@@ -24,15 +39,19 @@ h6 {
 	top: 12rem;
 	transform: rotate(-28deg);
 	left: 7vw;
+	z-index: 1;
+
+	transition: all .6s;
+
 	font-family: 'IBM Plex Mono', monospace;
 	text-align: center;
 	font-size: 5rem;
-	z-index: 1;
-	transition: all .6s;
+	
 	letter-spacing: -.5rem;
 }
 
 .move-aside {
+	position: fixed;
 	transform: rotate(90deg);
 	top: 32rem;
 	left: -25rem;
@@ -50,7 +69,9 @@ h6 {
 }
 
 .headshot-hiddenish {
-	opacity: .0125;
+	/*display: none;*/
+	z-index: -2;
+	opacity: .125;
 	transition: opacity 1s;
 }
 
@@ -59,28 +80,37 @@ footer {
 	bottom: 0;
 }
 
-.styles__mark-circle {
-	position: fixed;	
-	bottom: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.styles__mark-circle { display: none; }
+.styles__sqglz-logo  { display: none; }
 
-	margin-left: 50vw;
-	padding: 0 0 0 3px;
-	transform: translateX(-50%);
-	width: 36px;
-	height: 36px;
-	z-index: 15;
-	border-radius: 18px;
+@media (min-width: 900px) {
+	.styles__mark-circle {
+		position: fixed;	
+		bottom: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin-left: 50vw;
+		padding: 0 0 0 3px;
+		transform: translateX(-50%);
+		width: 36px;
+		height: 36px;
+		z-index: 15;
+		border-radius: 18px;
+	}
+
+	.styles__mark-circle:hover {
+		background-color: white;
+	}
+
+	.styles__sqglz-logo {
+		display: inline-block;
+		transform: translateY(15%);
+		height: 30px;
+		z-index: 16;
+	}
 }
 
-.styles__mark-circle:hover {
-	background-color: white;
-}
 
-.styles__sqglz-logo {
-	transform: translateY(15%);
-	height: 30px;
-	z-index: 16;
-}
+

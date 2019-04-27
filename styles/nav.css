@@ -117,24 +117,28 @@ nav {}
 	}
 
 /* =========================== DESKTOP NAV ======== */
-.nav__desktop {
-	position: fixed;
-	top: 0;
-	z-index: 10;
 
-	display: flex;
-	justify-content: space-between;
-	width: 100vw;
-}
+.nav__desktop-hidder { display: none; }
 
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
 	.nav__mobile { display: block; }
 	.nav__desktop { display: none; }
-}
+}*/
 
 @media (min-width: 900px) {
 	.nav__mobile { display: none; }
-	.nav__desktop { display: block; }
+	
+	.nav__desktop-hidder { display: block; }
+
+	.nav__desktop {
+		position: fixed;
+		top: 0;
+		z-index: 10;
+
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+	}
 }
 
 .nav__temp-home {
@@ -160,12 +164,22 @@ nav {}
 	padding: 30px;
 }
 
+.nav__home-icon {
+	opacity: .7;
+	transition: opacity .3s;
+	cursor: pointer;
+}
+
+.nav__home-icon:hover {
+	opacity: 1;
+	transition: opacity .3s;
+}
+
 .nav__link {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	z-index: 10;
-	/*margin: 0px 20px 0 20px;*/
 }
 
 .nav__poems-box {margin: 0px 10px 0 20px;}
