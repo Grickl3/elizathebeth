@@ -1,0 +1,43 @@
+
+
+
+.contact__content {
+	display: inline-block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 20vh;
+	margin-bottom: 12rem;
+}
+
+.contact__blurb {
+	max-width: 90%; 
+
+	@media (min-width: 800px) {
+		max-width: 700px;
+	}
+}
+
+.contact__field {
+	display: block;
+	margin: 1rem 0;
+	padding: 10px;
+	max-width: 90%;
+
+	color: $darkGrey;;
+	font-size: 1.1em;
+	font-weight: 500;
+
+	@media (min-width: 800px) {
+		padding: 20px;
+		max-width: 700px;
+	}
+}
+
+.submit {
+	background-color: #fff;
+		border-radius: 5px;
+}
+
+.submit:hover {
+	background-color: lightslategrey;
+}

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/nav.css">
 	<link rel="stylesheet" type="text/css" href="styles/poem.css">
 	<link rel="stylesheet" type="text/css" href="styles/content.css">
+	<link rel="stylesheet" type="text/css" href="styles/contact.css">
 
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,500,500i,700,700i" rel="stylesheet">
 </head>
@@ -116,10 +117,29 @@
 			</ul>
 		</div><!-- EXPERIENCE CONTENT -->
 
-		<div id="contact-content" class="content__contact">
-			<h1>Here we have some contact information</h1>
-			<h5>— or maybe a contact form?</h5>
+
+		<div id="contact-content" class="contact__content">
+
+			<p class="contact__blurb">Here are some words about getting a hold of Eliza.</p>
+
+			<form action="https://formspree.io/bethforpresident@gmail.com" method="POST">
+				<label>
+					<input type="email" name="email" placeholder="email address" class="email contact__field">
+				</label>
+				<label>
+					<input type="text" name="subject" placeholder="subject line" class="subject contact__field">
+				</label>
+				<label>
+					<textarea name="message" placeholder="Enter your message here." class="message contact__field"></textarea>
+				</label>
+				<button type="submit" class="submit contact__field">Send</button>
+			</form>
+
+			<div class="status"></div>
 		</div><!-- CONTACT CONTENT -->
+
+
+
 	</div><!-- CONTENT STORAGE -->
 
 	<footer>
