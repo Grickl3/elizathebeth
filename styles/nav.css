@@ -81,7 +81,7 @@ nav {}
 	.nav__links-box__mobile {
 		position: relative;
 		transition: transform .5s;
-		transform: translateY(-50vh);
+		transform: translateY(-200vh);
 		top: 8rem;
 		display: flex;
 		flex-direction: column;
@@ -111,7 +111,7 @@ nav {}
 		position: relative;
 		z-index: 3;
 		height: 125px;
-		opacity: .7;
+		opacity: 1;
 		transition: opacity .3s;
 		cursor: pointer;
 	}
