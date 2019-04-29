@@ -19,6 +19,8 @@
 }
 
 .poems__dropdown-list {
+	position: absolute;
+	z-index: 3;
 	list-style: none;
 }
 

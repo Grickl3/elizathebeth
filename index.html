@@ -15,7 +15,7 @@
 <body>
 
 	<nav id="mobile-nav" class="nav__mobile">
-		<img id="mobile-nav-background" class="nav__background-img" src="img/mobile-nav-background.png" alt="torn-indigo-linen">
+		<img id="mobile-nav-background" class="nav__background-img" src="img/mobile-nav-background.png" alt="torn-indigo-linen" nopin="nopin">
 
 		<div id="hamburger" class="nav__hamburger">
 			<img id="top-arm" class="nav__hamburger__arm nav__hamburger-top" src="img/mobile-nav-top.png" alt="mobile menu" nopin="nopin">
@@ -24,18 +24,24 @@
 		</div><!-- HAMBURGER -->
 
 		<div id="mobile-nav-links" class="nav__links-box__mobile">
-			<div class="nav__link__mobile nav__poems-box-mobile">
-				<img id="poems-icon-mobile" class="nav__link-image__mobile" src="img/poems.png" alt="poems" nopin="nopin">
+			
+			<div id="home-icon-mobile" class="nav__link__mobile nav__home-box-mobile">
+				<img class="nav__link-image__mobile" src="img/home.png" alt="home" nopin="nopin">
+				<span id="home-caption-mobile" class="nav__link-caption">home</span>
+			</div><!-- HOME LINK BOX -->
+
+			<div id="poems-icon-mobile" class="nav__link__mobile nav__poems-box-mobile">
+				<img class="nav__link-image__mobile" src="img/poems.png" alt="poems" nopin="nopin">
 				<span id="poems-caption-mobile" class="nav__link-caption">poems</span>
 			</div><!-- POEMS LINK BOX -->
 
-			<div class="nav__link__mobile nav__experience-box-mobile">
-				<img id="experience-icon-mobile" class="nav__link-image__mobile" src="img/experience.png" alt="experience" nopin="nopin">
+			<div id="experience-icon-mobile" class="nav__link__mobile nav__experience-box-mobile">
+				<img class="nav__link-image__mobile" src="img/experience.png" alt="experience" nopin="nopin">
 				<span id="experience-caption-mobile" class="nav__link-caption">experience</span>
 			</div><!-- EXPERIENCE LINK BOX -->
 
-			<div class="nav__link__mobile nav__contact-box-mobile">
-				<img id="contact-icon-mobile" class="nav__link-image__mobile" src="img/contact.png" alt="contact" nopin="nopin">
+			<div id="contact-icon-mobile" class="nav__link__mobile nav__contact-box-mobile">
+				<img class="nav__link-image__mobile" src="img/contact.png" alt="contact" nopin="nopin">
 				<span id="contact-caption-mobile" class="nav__link-caption">contact</span>
 			</div><!-- POEMS LINK BOX -->
 		</div><!-- LINK BOX -->
@@ -124,6 +130,8 @@
 				<li class="content__experience__list-item">Denver Start-up Week Meet &#38; Greet</li>
 				<li class="content__experience__list-item">Love Letters Play</li>
 			</ul>
+
+			<div class="spacer__medium"></div>
 		</div><!-- EXPERIENCE CONTENT -->
 
 
@@ -176,15 +184,63 @@
 		var middleArm = document.getElementById("middle-arm");
 		var bottomArm = document.getElementById("bottom-arm");
 
-		hamburger.addEventListener("click", function() {
+		function toggleMobileNav() {
 			topArm.classList.toggle("nav__hamburger-top-x");
 			middleArm.classList.toggle("nav__hamburger-middle-x");
 			bottomArm.classList.toggle("nav__hamburger-bottom-x");
 			mobileNavBackground.classList.toggle("nav__mobile__open");
 			mobileNavLinks.classList.toggle("nav__links-box__descended");
+		}
+
+		hamburger.addEventListener("click", function() {
+			toggleMobileNav();
 		});
 
-	// NAV => ACTUAL NAVIGATION
+	// NAV => MOBILE NAVIGATION
+		var mobileHome = document.getElementById("home-icon-mobile");
+		var poemsMobile = document.getElementById("poems-icon-mobile");
+		var experienceMobile = document.getElementById("experience-icon-mobile");
+		var contactMobile = document.getElementById("contact-icon-mobile");
+
+		mobileHome.addEventListener("click", function() {
+			toggleMobileNav();
+			headshot.classList.remove("headshot-hiddenish");
+			boldClaim.classList.remove("move-aside");
+			boldClaim.classList.remove("bold-claim__subdued");
+			contentBox.innerHTML = '';
+		});
+
+		poemsMobile.addEventListener("click", function() {
+			toggleMobileNav();
+			poemsList.classList.toggle("poems__hidden");
+			headshot.classList.add("headshot-hiddenish");
+			boldClaim.classList.add("move-aside");
+			boldClaim.classList.add("bold-claim__subdued");
+			contentBox.innerHTML = '';
+			contentBox.appendChild(poemsList);
+		});
+
+		experienceMobile.addEventListener("click", function() {
+			toggleMobileNav();
+			boldClaim.classList.add("move-aside");
+			poemsList.classList.add("poems__hidden");
+			headshot.classList.add("headshot-hiddenish");
+			boldClaim.classList.add("bold-claim__subdued");
+			contentBox.innerHTML = '';
+			contentBox.appendChild(experienceContent);
+		});
+
+		contactMobile.addEventListener("click", function() {
+			toggleMobileNav();
+			boldClaim.classList.add("move-aside");
+			poemsList.classList.add("poems__hidden");
+			headshot.classList.add("headshot-hiddenish");
+			boldClaim.classList.add("bold-claim__subdued");
+			contentBox.innerHTML = '';
+			contentBox.appendChild(contactContent);
+		});
+
+	// NAV => DESKTOP NAVIGATION
 		var home = document.getElementById("home");
 		var poemsList = document.getElementById("poems-list");
 

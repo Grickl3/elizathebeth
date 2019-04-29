@@ -2,7 +2,9 @@
 
 
 .content-box {
-	margin-top: 8rem;
+	position: absolute;
+	margin-top: 18rem;
+	z-index: 2;
 
 }
 

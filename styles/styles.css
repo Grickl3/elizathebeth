@@ -50,6 +50,10 @@ a:hover {
 	letter-spacing: -.5rem;
 }
 
+.bold-claim__subdued {
+	opacity: .15;
+}
+
 .move-aside {
 	position: fixed;
 	transform: rotate(90deg);
@@ -65,7 +69,7 @@ a:hover {
 	height: 100vh;
 	opacity: .8;
 	transition: opacity 1s;
-	z-index: 2;
+	z-index: -1;
 }
 
 .headshot-hiddenish {
@@ -112,5 +116,8 @@ footer {
 	}
 }
 
-
+.spacer__medium {
+	width: 5px;
+	height: 50px;
+}
 
