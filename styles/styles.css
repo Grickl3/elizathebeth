@@ -36,8 +36,8 @@ a:hover {
 
 .bold-claim {
 	position: absolute;
-	top: 12rem;
-	transform: rotate(-28deg);
+	top: 18rem;
+	transform: rotate(-18deg);
 	left: 7vw;
 	z-index: 1;
 
@@ -45,7 +45,7 @@ a:hover {
 
 	font-family: 'IBM Plex Mono', monospace;
 	text-align: center;
-	font-size: 5rem;
+	font-size: 4rem;
 	
 	letter-spacing: -.5rem;
 }
@@ -70,7 +70,7 @@ a:hover {
 	opacity: .8;
 	transition: opacity 1s;
 	z-index: -1;
-	
+
 	background: url(../img/headshot.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
