@@ -62,15 +62,31 @@ a:hover {
 	transition: all .6s;
 }
 
-
-.headshot {
+.headshot { 
 	position: fixed;
 	top: 0;
-	height: 100vh;
+	min-height: 100%;
+	min-width: 100%;
 	opacity: .8;
 	transition: opacity 1s;
 	z-index: -1;
+	
+	background: url(../img/headshot.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
+
+/*.headshot {
+	position: fixed;
+	top: 0;
+	min-height: 100%;
+	min-width: 100%;
+	opacity: .8;
+	transition: opacity 1s;
+	z-index: -1;
+}*/
 
 .headshot-hiddenish {
 	/*display: none;*/
