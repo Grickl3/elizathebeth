@@ -86,7 +86,10 @@
 	</div><!-- DESKTOP NAV HIDDER BOX -->
 
 	<img id="headshot" class="headshot" src="img/headshot.png">
-	<h1 id="bold-claim" class="bold-claim" >ElizaBeth is more<br>punk rock than Brice.</h1>
+	<div id="bold-claim" >
+		<h1 class="bold-claim" >ElizaBeth is more<br>punk rock than Brice.</h1>
+	</div><!-- BOLD CLAIM -->
+	
 
 	<div id="content-box" class="content-box">
 		
@@ -147,6 +150,9 @@
 					<input type="text" name="subject" placeholder="subject line" class="subject contact__field">
 				</label>
 				<label>
+					<input type="text" name="pronoun" placeholder="personal pronouns" class="pronoun contact__field">
+				</label>
+				<label>
 					<textarea name="message" placeholder="Enter your message here." class="message contact__field"></textarea>
 				</label>
 				<button type="submit" class="submit contact__field">Send</button>
@@ -174,6 +180,24 @@
 		var contentBox = document.getElementById("content-box");
 		var experienceContent = document.getElementById("experience-content");
 		var contactContent = document.getElementById("contact-content");
+
+	// BOLD CLAIM
+		var claims = [
+			'<h1 class="bold-claim" >ElizaBeth is more<br>punk rock than Brice.</h1>',
+			'<h1 class="bold-claim" >Claim number two</h1>',
+			'<h1 class="bold-claim" >Third Claim</h1>',
+			'<h1 class="bold-claim" >Claim, the Forth</h1>',
+			];
+
+		var selectClaim = function() {
+
+		};
+
+		var makeClaim = function() {
+			boldClaim.innerHTML = claims[1];
+		};
+
+		makeClaim();
 
 	// NAV HAMBURGER
 		var hamburger = document.getElementById("hamburger");

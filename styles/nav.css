@@ -189,6 +189,8 @@ nav {}
 	flex-direction: column;
 	align-items: center;
 	z-index: 10;
+
+	/*border: 1px solid blue;*/
 }
 
 .nav__poems-box {margin: 0px 10px 0 20px;}
