@@ -23,7 +23,7 @@
 	position: fixed;
 	top: 26rem;
 	transform: rotate(-18deg);
-	left: 14vw;
+	left: 5vw;
 	z-index: 1;
 
 	transition: all .6s;
