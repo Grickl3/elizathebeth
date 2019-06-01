@@ -90,7 +90,7 @@
 		<!-- <img id="headshot" class="headshot" src="img/headshot.png"> -->
 	</div><!-- HEAD SHOT -->
 	
-	<div class="bold-claim__box">
+	<div id="bold-claim-box" class="bold-claim__box">
 		<div class="bold-claim__inner-box bold-claim__box-3"></div>
 		<div class="bold-claim__inner-box bold-claim__box-2"></div>
 		<div class="bold-claim__inner-box bold-claim__box-1"></div>
@@ -184,6 +184,7 @@
 
 	// MAIN CONTENT VARIABLES
 		var boldClaim = document.getElementById("bold-claim");
+		var boldClaimBox = document.getElementById("bold-claim-box");
 		var headshot = document.getElementById("headshot");
 		var contentBox = document.getElementById("content-box");
 		var experienceContent = document.getElementById("experience-content");
@@ -269,6 +270,8 @@
 			headshot.classList.remove("headshot-hiddenish");
 			boldClaim.classList.remove("move-aside");
 			boldClaim.classList.remove("bold-claim__subdued");
+			boldClaimBox.classList.remove("move-aside");
+			boldClaimBox.classList.remove("bold-claim__subdued");
 			contentBox.innerHTML = '';
 		});
 
@@ -278,6 +281,8 @@
 			headshot.classList.add("headshot-hiddenish");
 			boldClaim.classList.add("move-aside");
 			boldClaim.classList.add("bold-claim__subdued");
+			boldClaimBox.classList.add("move-aside");
+			boldClaimBox.classList.add("bold-claim__subdued");
 			contentBox.innerHTML = '';
 			contentBox.appendChild(poemsList);
 		});
@@ -287,7 +292,10 @@
 			boldClaim.classList.add("move-aside");
 			poemsList.classList.add("poems__hidden");
 			headshot.classList.add("headshot-hiddenish");
+			boldClaim.classList.add("move-aside");
 			boldClaim.classList.add("bold-claim__subdued");
+			boldClaimBox.classList.add("move-aside");
+			boldClaimBox.classList.add("bold-claim__subdued");
 			contentBox.innerHTML = '';
 			contentBox.appendChild(experienceContent);
 		});
@@ -297,7 +305,10 @@
 			boldClaim.classList.add("move-aside");
 			poemsList.classList.add("poems__hidden");
 			headshot.classList.add("headshot-hiddenish");
+			boldClaim.classList.add("move-aside");
 			boldClaim.classList.add("bold-claim__subdued");
+			boldClaimBox.classList.add("move-aside");
+			boldClaimBox.classList.add("bold-claim__subdued");
 			contentBox.innerHTML = '';
 			contentBox.appendChild(contactContent);
 		});
@@ -308,6 +319,9 @@
 
 		home.addEventListener("click", function() {
 			boldClaim.classList.remove("move-aside");
+			boldClaim.classList.remove("bold-claim__subdued");
+			boldClaimBox.classList.remove("move-aside");
+			boldClaimBox.classList.remove("bold-claim__subdued");
 			contentBox.innerHTML = '';
 			poemsList.classList.add("poems__hidden");
 			headshot.classList.remove("headshot-hiddenish");
@@ -325,6 +339,9 @@
 		});
 		poemsIcon.addEventListener("click", function() {
 			boldClaim.classList.add("move-aside");
+			boldClaim.classList.add("bold-claim__subdued");
+			boldClaimBox.classList.add("move-aside");
+			boldClaimBox.classList.add("bold-claim__subdued");
 			poemsList.classList.toggle("poems__hidden");
 			headshot.classList.add("headshot-hiddenish");
 		});
@@ -341,6 +358,9 @@
 		});
 		experienceIcon.addEventListener("click", function() {
 			boldClaim.classList.add("move-aside");
+			boldClaim.classList.add("bold-claim__subdued");
+			boldClaimBox.classList.add("move-aside");
+			boldClaimBox.classList.add("bold-claim__subdued");
 			poemsList.classList.add("poems__hidden");
 			headshot.classList.add("headshot-hiddenish");
 			contentBox.innerHTML = '';
@@ -359,6 +379,9 @@
 		});
 		contactIcon.addEventListener("click", function() {
 			boldClaim.classList.add("move-aside");
+			boldClaim.classList.add("bold-claim__subdued");
+			boldClaimBox.classList.add("move-aside");
+			boldClaimBox.classList.add("bold-claim__subdued");
 			poemsList.classList.add("poems__hidden");
 			headshot.classList.add("headshot-hiddenish");
 			contentBox.innerHTML = '';

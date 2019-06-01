@@ -72,6 +72,14 @@
 	opacity: .6;
 }
 
+.move-aside {
+	position: fixed;
+	transform: rotate(90deg);
+	top: 32rem;
+	left: -25rem;
+	transition: all .6s;
+}
+
 .bold-claim__subdued {
 	opacity: .15;
 }
