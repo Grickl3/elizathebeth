@@ -1,0 +1,79 @@
+
+
+
+.bold-claim {
+	position: absolute;
+	top: 0;
+	left: 15%;
+	z-index: 5;
+	min-width: 36rem;
+
+	font-family: 'IBM Plex Mono', monospace;
+	text-align: center;
+	font-size: 4rem;
+	color: white;
+	
+	letter-spacing: -.5rem;
+
+	background-color: rgba(2, 24, 70, .4);
+	/*border: 1px solid white;*/
+}
+
+.bold-claim__box {
+	position: fixed;
+	top: 26rem;
+	transform: rotate(-18deg);
+	left: 14vw;
+	z-index: 1;
+
+	transition: all .6s;
+
+	/*border: 2px solid gold;*/
+}
+
+.bold-claim__inner-box {
+	position: absolute;
+	width: 600px;
+	height: 100px;
+}
+
+.bold-claim__box-1 { 
+	padding: .3rem 2rem;
+	height: 14rem;
+	width: 16rem;
+	transform: rotate(-57deg);
+
+	background-color: #250A6C; /* violet */
+	opacity: .6;
+	mix-blend-mode: color-dodge;
+}
+
+.bold-claim__box-2 { 
+	top: -5%;
+	left: -35%;
+	height: 7rem;
+	width: 46rem;
+	transform: rotate(16deg);
+
+	mix-blend-mode: darken;
+	background-color: #092869; /* blue */
+	opacity: .6;
+}
+
+.bold-claim__box-3 {
+	/*top: 10%;*/
+	left: 25%;
+	height: 24rem;
+	width: 12rem;
+	transform: rotate(48deg);
+
+	mix-blend-mode: color-burn;
+	background-color: #004237; /* green */
+	opacity: .6;
+}
+
+.bold-claim__subdued {
+	opacity: .15;
+}
+
+

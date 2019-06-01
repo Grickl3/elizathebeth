@@ -6,6 +6,7 @@
 
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="styles/bold.css">
 	<link rel="stylesheet" type="text/css" href="styles/poem.css">
 	<link rel="stylesheet" type="text/css" href="styles/content.css">
 	<link rel="stylesheet" type="text/css" href="styles/contact.css">
@@ -89,8 +90,11 @@
 		<!-- <img id="headshot" class="headshot" src="img/headshot.png"> -->
 	</div><!-- HEAD SHOT -->
 	
-	<div id="bold-claim" >
-		<h1 class="bold-claim">ElizaBeth is more<br>punk rock than Brice.</h1>
+	<div class="bold-claim__box">
+		<div class="bold-claim__inner-box bold-claim__box-3"></div>
+		<div class="bold-claim__inner-box bold-claim__box-2"></div>
+		<div class="bold-claim__inner-box bold-claim__box-1"></div>
+		<div id="bold-claim"></div>
 	</div><!-- BOLD CLAIM -->
 	
 
@@ -187,32 +191,32 @@
 
 	// BOLD CLAIM
 		var claims = [
-			'<h1 class="bold-claim" >ElizaBeth is more<br>punk rock than Brice.</h1>',
-			'<h1 class="bold-claim" >If Mother Earth<br>Didn\'t want to be raped<br>Then why did she wear<br>Those beautiful trees?</h1>',
-			'<h1 class="bold-claim" >I am blown away</h1>',
-			'<h1 class="bold-claim" >Electricity</h1>',
-			'<h1 class="bold-claim" >Fresh as release</h1>',
-			'<h1 class="bold-claim" >To Maiden Goddess Spring\'s</h1>',
-			'<h1 class="bold-claim" >Unleashing.</h1>',
-			'<h1 class="bold-claim" >As if on cue</h1>',
-			'<h1 class="bold-claim" >I want you to shake me</h1>',
-			'<h1 class="bold-claim" >into me</h1>',
-			'<h1 class="bold-claim" >Then call me ugly.</h1>',
-			'<h1 class="bold-claim" >Renew.<br>Refresh.<br>Retrieve.<br>Respond.</h1>',
-			'<h1 class="bold-claim" >Live your life, and sing thy song.</h1>',
-			'<h1 class="bold-claim" >The fierce and flaming rage</h1>',
-			'<h1 class="bold-claim" >The gentle gratitude,</h1>',
-			'<h1 class="bold-claim" >As we age, we stoop.</h1>',
-			'<h1 class="bold-claim" >Our petals droop.</h1>',
-			'<h1 class="bold-claim" >We wither.</h1>',
-			'<h1 class="bold-claim" >Of possibility.</h1>',
-			'<h1 class="bold-claim" >Gradually,</h1>',
-			'<h1 class="bold-claim" >Leaving a thousand seeds</h1>',
-			'<h1 class="bold-claim" >and ochre flowers.</h1>',
-			'<h1 class="bold-claim" >into the azure blue sky.</h1>',
-			'<h1 class="bold-claim" >Feeder of chikens<br>Raider of kitchens</h1>',
-			'<h1 class="bold-claim" >Pollen tipped nose</h1>',
-			'<h1 class="bold-claim" >The belly waxes</h1>',
+			'<span class="bold-claim" >ElizaBeth is more<br>punk rock than Brice.</span>',
+			'<span class="bold-claim" >If Mother Earth<br>Didn\'t want to be raped<br>Then why did she wear<br>Those beautiful trees?</span>',
+			'<span class="bold-claim" >I am blown away</span>',
+			'<span class="bold-claim" >Electricity</span>',
+			'<span class="bold-claim" >Fresh as release</span>',
+			'<span class="bold-claim" >To Maiden Goddess Spring\'s</span>',
+			'<span class="bold-claim" >Unleashing.</span>',
+			'<span class="bold-claim" >As if on cue</span>',
+			'<span class="bold-claim" >I want you to shake me</span>',
+			'<span class="bold-claim" >into me</span>',
+			'<span class="bold-claim" >Then call me ugly.</span>',
+			'<span class="bold-claim" >Renew.<br>Refresh.<br>Retrieve.<br>Respond.</span>',
+			'<span class="bold-claim" >Live your life, and sing thy song.</span',
+			'<span class="bold-claim" >The fierce and flaming rage</span',
+			'<span class="bold-claim" >The gentle gratitude,</span>',
+			'<span class="bold-claim" >As we age, we stoop.</span>',
+			'<span class="bold-claim" >Our petals droop.</span>',
+			'<span class="bold-claim" >We wither.</span>',
+			'<span class="bold-claim" >Of possibility.</span>',
+			'<span class="bold-claim" >Gradually,</span>',
+			'<span class="bold-claim" >Leaving a thousand seeds</span>',
+			'<span class="bold-claim" >and ochre flowers.</span>',
+			'<span class="bold-claim" >into the azure blue sky.</span>',
+			'<span class="bold-claim" >Feeder of chikens<br>Raider of kitchens</span>',
+			'<span class="bold-claim" >Pollen tipped nose</span>',
+			'<span class="bold-claim" >The belly waxes</span>',
 			];
 
 		var selectClaim = function() {

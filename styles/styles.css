@@ -34,26 +34,6 @@ a:hover {
 
 }
 
-.bold-claim {
-	position: absolute;
-	top: 18rem;
-	transform: rotate(-18deg);
-	left: 7vw;
-	z-index: 1;
-
-	transition: all .6s;
-
-	font-family: 'IBM Plex Mono', monospace;
-	text-align: center;
-	font-size: 4rem;
-	
-	letter-spacing: -.5rem;
-}
-
-.bold-claim__subdued {
-	opacity: .15;
-}
-
 .move-aside {
 	position: fixed;
 	transform: rotate(90deg);
