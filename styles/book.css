@@ -1,0 +1,20 @@
+
+
+
+
+.book__link-box {
+	position: absolute;
+	bottom: 0;
+	right: 15vw;
+	z-index: 9;
+
+	transition: transform .6s;
+	transition: opacity .12s;
+}
+
+.book__link-hidden {
+	transition: transform .6s;
+	transition: opacity .12s;
+
+	opacity: 0;
+}
